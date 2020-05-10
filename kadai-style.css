@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+}
+/*.box{
+	width: 960px;
+	padding: 50px 0;
+	margin: 0 auto;
+}*/
+
+.box-item{
+	width: 300px;
+	float: left;
+	padding: 10px;
+	position: relative;
+	border: 1px solid gray;
+	margin-right: 30px;
+}
+
+
+.box-box1{
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url(sample_img/img/flow01.png);
+}
+
+.box-box2{
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url(sample_img/img/flow02.png);
+}
+
+.box-box3{
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url(sample_img/img/flow03.png);
+}
+
+
+
+
+/*.box-box:nth-child(1){
+	background-image: url(chapter9_exercise/img/flow01.png);
+
+}
+
+.box-box:nth-child(2){
+	background-image: url(chapter9_exercise/img/flow02.png);
+}
+
+.box-box:nth-child(3){
+	background-image: url(chapter9_exercise/img/flow03.png);
+}*/
+
+.step{
+	color: white;
+	background-color: orange;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 3px;
+}
+
+@media screen and (max-width:425px){
+	main{
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.box-item{
+		width : 90%;
+		margin-left: 5%;
+		/*margin-right: 5%;*/
+	}
+
+	.box-item:nth-child(1){
+		margin-bottom: 20px
+	}
+
+	.box-item:nth-child(2){
+		margin-bottom: 20px
+	}
+
+	.box-item:nth-child(3){
+		margin-bottom: 0px
+	}
+}
