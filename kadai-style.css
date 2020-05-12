@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.clearfix:after{
+.clearfix::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -25,8 +25,12 @@ main{
 	float: left;
 	padding: 10px;
 	position: relative;
-	border: 1px solid gray;
+	border: 1px solid #eee;
 	margin-right: 30px;
+}
+
+.box-item:last-child{
+	margin-right: 0px;
 }
 
 
@@ -76,11 +80,15 @@ main{
 	padding: 3px;
 }
 
+.box-head{
+  margin: 15px 0 5px;
+}
+
 @media screen and (max-width:425px){
 	main{
 		width: 100%;
-		padding-top: 50px;
-		padding-bottom: 50px;
+		/*padding-top: 50px;
+		padding-bottom: 50px;*/
 	}
 
 	.box-item{
